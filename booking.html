@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | RIDENAIJA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="assets/logo.png" alt="RIDENAIJA">
+      <span>RIDENAIJA</span>
+    </div>
+  </div>
+</header>
+
+<section class="bookings booking-page">
+  <h2 id="book-page"> Book Your Seat</h2>
+
+  <div class="booking-info">
+    <h3>🚌 Trip Details</h3>
+    <div class="trip-details-grid">
+      <div class="detail-box">
+        <span class="detail-icon">🏢</span>
+        <div>
+          <p class="detail-label">Company</p>
+          <p class="detail-value">ABC Transport</p>
+        </div>
+      </div>
+      <div class="detail-box">
+        <span class="detail-icon">📍</span>
+        <div>
+          <p class="detail-label">Route</p>
+          <p class="detail-value">Lagos → Abuja</p>
+        </div>
+      </div>
+      <div class="detail-box">
+        <span class="detail-icon">🕐</span>
+        <div>
+          <p class="detail-label">Departure</p>
+          <p class="detail-value">8:00 AM</p>
+        </div>
+      </div>
+      <div class="detail-box">
+        <span class="detail-icon">💰</span>
+        <div>
+          <p class="detail-label">Price</p>
+          <p class="detail-value">₦18,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form action="payment.html">
+    <h3>👤 Passenger Information</h3>
+    
+    <div class="form-row">
+      <input type="text" name="fullName" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+    </div>
+    
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <h3>💺 Select Your Seat</h3>
+    <select name="seat" required>
+      <option value="">Choose Your Seat</option>
+      <option value="1">Seat 1 - Available</option>
+      <option value="2">Seat 2 - Available</option>
+      <option value="3" disabled>Seat 3 - Booked</option>
+      <option value="4">Seat 4 - Available</option>
+      <option value="5">Seat 5 - Available</option>
+      <option value="6">Seat 6 - Available</option>
+      <option value="7" disabled>Seat 7 - Booked</option>
+      <option value="8">Seat 8 - Available</option>
+      <option value="9">Seat 9 - Available</option>
+      <option value="10">Seat 10 - Available</option>
+      <option value="11">Seat 11 - Available</option>
+      <option value="12" disabled>Seat 12 - Booked</option>
+      <option value="13">Seat 13 - Available</option>
+      <option value="14">Seat 14 - Available</option>
+      <option value="15" disabled>Seat 15 - Booked</option>
+      <option value="16">Seat 16 - Available</option>
+    </select>
+
+    <button class="btn btn-pay-now" type="submit">
+      <span id="btn-pay">Pay Now</span>
+      <span class="btn-arrow">→</span>
+    </button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 RIDENAIJA. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIDENAIJA</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <img src="assets/logo.png" alt="RIDENAIJA Logo">
+      <span>RIDENAIJA</span>
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Routes</a>
+      <a href="booking.html">Bookings</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="btn">🌙</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Travel Smarter with RIDENAIJA</h1>
+    <p>Book bus tickets easily, securely, and at the best prices.</p>
+
+    <div class="search-box">
+      <input placeholder="From">
+      <input placeholder="To">
+      <input type="date">
+      <a href="booking.html" class="btn">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="trips-section">
+  <h1><span style="color: #6930c3;">Available Trips</span></h1>
+
+  <div class="trip-card">
+    <img src="assets/bus-bg.jpg" alt="Bus">
+    <div class="trip-info">
+      <h3>ABC Transport</h3>
+      <p>Lagos → Abuja</p>
+      <p>Departure: 8:00 AM | Arrival: 6:00 PM</p>
+      <p class="price">₦18,000</p>
+      <a href="booking.html" class="btn" style="text-decoration: none; text-align: center;">Book Now</a>
+    </div>
+  </div>
+
+  <div class="trip-card">
+    <img src="assets/bus-bg.jpg" alt="Bus">
+    <div class="trip-info">
+      <h3>God Is Good Motors</h3>
+      <p>Ibadan → Lagos</p>
+      <p>Departure: 9:30 AM | Arrival: 12:00 PM</p>
+      <p class="price">₦6,500</p>
+      <a href="booking.html" class="btn" style="text-decoration: none; text-align: center;">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>Reviews & Ratings</h2>
+
+  <div class="review-card">
+    <h3>ABC Transport</h3>
+    <p>⭐⭐⭐⭐☆ (4.2)</p>
+    <p>"Very comfortable trip and professional drivers."</p>
+  </div>
+
+  <div class="review-form">
+    <h3>Leave a Review</h3>
+    <select>
+      <option>⭐</option>
+      <option>⭐⭐</option>
+      <option>⭐⭐⭐</option>
+      <option>⭐⭐⭐⭐</option>
+      <option>⭐⭐⭐⭐⭐</option>
+    </select>
+    <textarea placeholder="Write your feedback..."></textarea>
+    <button>Submit Review</button>
+  </div>
+</section>
+
+<section class="admin-dashboard">
+  <h2>Admin Dashboard</h2>
+
+  <div class="admin-grid">
+    <div class="admin-card">
+      <h3>Bus Companies</h3>
+      <button>Add Company</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+
+    <div class="admin-card">
+      <h3>Trips</h3>
+      <br>
+      <button>Create Trip</button>
+      <br>
+      <button>Edit Trip</button>
+      <br>
+      <button>Delete Trip</button>
+    </div>
+
+    <div class="admin-card">
+      <h3>Manage Users</h3>
+      <button>View Users</button>
+      <button>Suspend</button>
+    </div>
+
+    <div class="admin-card">
+      <h3>Revenue Summary</h3>
+      <p>Total Revenue: ₦2,450,000</p>
+      <p>Top Route: Lagos → Abuja</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>Why Choose RIDENAIJA?</h2>
+
+  <div class="features-grid">
+    <div class="card"><i class="fas fa-shield-alt"></i><p>Secure Booking</p></div>
+    <div class="card"><i class="fas fa-money-bill-wave"></i><p>Best Prices</p></div>
+    <div class="card"><i class="fas fa-headset"></i><p>24/7 Support</p></div>
+    <div class="card"><i class="fas fa-ticket-alt"></i><p>E-Tickets</p></div>
+  </div>
+</section>
+
+<!-- POPULAR ROUTES -->
+<section class="bookings">
+  <h2>Popular Routes</h2>
+  <p>Lagos ↔ Abuja • Lagos ↔ Ibadan • Abuja ↔ Enugu</p>
+</section>
+
+<!-- AUTH SECTION -->
+<section class="auth-section" id="auth">
+  <div class="auth-container">
+
+    <!-- LOGIN -->
+    <div class="auth-box" id="loginBox">
+      <h2>Login to RIDENAIJA</h2>
+
+      <input  type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+
+      <button class="btn-auth">Login</button>
+
+      <p class="auth-text">
+        Forgot password? <a href="#">Reset</a><br>
+        Don't have an account?
+        <span class="switch" onclick="showSignup()">Sign Up</span>
+      </p>
+    </div>
+
+    <!-- SIGN UP -->
+    <div class="auth-box hidden" id="signupBox">
+      <h2>Create RIDENAIJA Account</h2>
+
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+
+      <button class="btn-auth">Sign Up</button>
+
+      <p class="auth-text">
+        Already have an account?
+        <span class="switch" onclick="showLogin()">Login</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact RIDENAIJA</h2>
+
+  <p><i class="fas fa-phone"></i> +2349077250386</p>
+  <p><i class="fas fa-envelope"></i> ridenaija@gmail.com</p>
+
+  <div class="socials">
+    <a href="https://facebook.com/ridenaija" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://instagram.com/ridenaija" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://twitter.com/ridenaija" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="mailto:info@ridenaija.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 RIDENAIJA. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

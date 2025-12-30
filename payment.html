@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | RIDENAIJA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="assets/logo.png" alt="RIDENAIJA">
+      <span>RIDENAIJA</span>
+    </div>
+  </div>
+</header>
+
+<section class="trips-section">
+  <h2>Payment</h2>
+
+  <div class="payment-summary">
+    <h3>Booking Summary</h3>
+    <p><strong>Route:</strong> Lagos → Abuja</p>
+    <p><strong>Departure:</strong> 8:00 AM</p>
+    <p><strong>Seat:</strong> Seat 5</p>
+    <p><strong>Amount:</strong> ₦18,000</p>
+  </div>
+
+  <h3>Select Payment Method</h3>
+  
+  <form action="confirmation.html">
+    <div class="payment-options">
+      <label class="payment-option">
+        <input type="radio" name="payment" value="card" required>
+        <span>💳 Pay with Card</span>
+      </label>
+
+      <label class="payment-option">
+        <input type="radio" name="payment" value="transfer">
+        <span>🏦 Bank Transfer</span>
+      </label>
+
+      <label class="payment-option">
+        <input type="radio" name="payment" value="ussd">
+        <span>📱 USSD Payment</span>
+      </label>
+    </div>
+
+    <button class="btn" type="submit">Confirm Payment</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 RIDENAIJA. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
